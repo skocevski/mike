@@ -6,7 +6,7 @@ x = 0                                   #declaring integer variable to use it as
 sin = []                                #declaring array sin
 cosine = []                              #declaring array sin
 while (x < 10):                         #while loop that circels 10 times
-    y = random.randint(0, 90)           #declaring y variable that has the value of the result of the function randit() which generates random value in the range of 0-99
+    y = random.randint(0, 90)           #declaring y variable that has the value of the result of the function randit() which generates random value in the range of 0-90
     s = math.sin(y)                     #declaring s variable that holds the result of the function sinus() of the previous randomly generated number
     c = math.cos(y)                     #declaring c variable that holds the result of the function cosine() of the previous randomly generated number
     sin.insert(x, s)                    #using the function insert() in order to put the value s in the array sin[] in position x (in the first loop x=0)
