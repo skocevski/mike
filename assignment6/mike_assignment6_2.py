@@ -1,3 +1,10 @@
+'''
+For the program to work properly, it must have the following files exported in the same location as the .py file:
+us wordss.txt - database of US words
+be words.txt - database of Brit words
+SEWcontent.txt - Provided file with the articles from Simple English Wikipedia.
+'''
+
 import numpy as np
 
 f1=open("SEWcontent.txt", "r", encoding="utf-8")
