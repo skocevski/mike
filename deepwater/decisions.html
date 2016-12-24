@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/dashboard.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="images/57324-200.png">
+<title> Rig Decisions | DeepWater Simulation </title>
+
+
+
+<style>
+html {display:table; 
+width:100%; 
+background:url(images/bcg5.jpg) no-repeat top left fixed; 
+ background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+<div style="background-color:#333;  position:fixed;     top:0; left:0; right:0; margin:0 auto; width:100%;background-color:black;">
+<div class="divmenu">
+&emsp; <img src="images/icoman.png" width="14px" style="vertical-align: middle;">
+<font color="#999999" >Your role:</font> <b>ProjectManager</b> &emsp; &emsp;
+<img src="images/gricon.png" width="20px" style="vertical-align: middle;">
+<font color="#999999" >Your group:</font><b> Group</b>
+</div>
+
+<div class="divmenu" style="text-align:right">
+&emsp;<img src="images/status.png" height="80%" style="vertical-align: middle;">
+<a href="dashboard.html" class="links">Rig Status </a>&emsp; &emsp;
+ <img src="images/news.png" height="70%" style="vertical-align: middle;">
+<a href="rignews.html"" class="links"> Rig News </a> &emsp; &emsp;
+<img src="images/goals.png" height="70%" style="vertical-align: middle;">
+<a href="goals.html" class="links"> Your Goals  </a>&emsp; &emsp;
+<img src="images/decision.png" height="80%" style="vertical-align: middle;">
+<a href="decisions.html" class="links"> <font color="#FFFF53"> <b>  Your Decisions </b> </font>
+</a></div>
+
+
+<table cellspacing="8" style="position:absolute; top:90px; left:15%; border:solid; border; border-width:1px; border-color:maroon"" width="70%" height="80%" background="images/whiteback.png" align="center">
+
+<tr valign="top" style="height:7vh" >
+<td style="padding-top:10pt; padding-left:10pt; padding-right:10" align="center">
+
+<img src="images/checklist.png" width="25px" style="display:inline; vertical-align: middle;">
+<h2 class="title" style="display:inline">Your Decisions </h2>
+<hr size="1px" color="#7b7a75" width="200px">
+
+
+<p align="left"> <font color="#333333" size="-1" face="Arial, Helvetica, sans-serif"> <i> *In each round you will have to make a decision. If you do not submit any decision, the decisions from the last round apply. </i></font> </p> <br/>
+
+</td>
+</tr>
+<tr>
+<td  style=" border:solid; border; border-width:1px; border-color:maroon; background-image:url(images/grayback.png)">
+
+
+<h3 align="center" class="title"> <font size="4px">Decision for Phase 1 </font> </h3>
+
+<div style=" width:30%; display:inline; padding-left:25%" class="phases"> 
+<font color="#333333" face="Verdana, Geneva, sans-serif">Your decision:</font>
+</div>&emsp;
+<div style=" display:inline;">
+  <select class="select-style" id="decision">
+      <option disabled selected value> Select an option  </option>
+    <option style=" background-image:url(images/dollar-round-icon--18.gif)"  value="proceed"> Proceed ($2m) </option>
+    <option style="background-image:url(images/dollaricon.png)"  value="proceedcheck">Proceed with CHECK ($2m) </option>
+  </select>
+</div>
+
+<br/><br/><br/>
+
+<div style="display:inline; padding-left:25%" class="phases"> 
+<font color="#333333" face="Verdana, Geneva, sans-serif"> Your challange: </font> 
+</div>&emsp;
+<div style=" display:inline" class="decisions">
+<i> *No challange for you in this phase. </i>
+</div>
+<br/><br/><br/><br/><br/><br/>
+
+<div align="center"> 
+<button type="button" id="submit"  value="Submit decision" onClick="coverUp()" class="select-style">Submit decisions</button>
+<button type="button" id="nextphase"  value="Submit decision" class="select-style" onclick="location.href = 'dashboard.html'" style="border-color:gray; background-color:white; color:gray;" disabled >Proceed to next phase</button>
+</div>
+<br/><br/><br/><br/>
+</td>
+</tr>
+</table>
+
+
+
+<script type="text/javascript">
+    function coverUp() {
+		var dec = document.getElementById('decision').selectedIndex;
+		if (dec == 1 || dec == 2){
+			document.getElementById('nextphase').disabled = false
+			document.getElementById('decision').disabled="true";
+			document.getElementById('decision').style.backgroundColor="#ccc8c8"
+			document.getElementById('nextphase').style.color="white";
+			document.getElementById('nextphase').style.backgroundColor="maroon";
+			document.getElementById('nextphase').style.borderColor="white";
+		}
+    }
+</script>
+
+</body>
+</html>

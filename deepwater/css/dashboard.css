@@ -1,0 +1,77 @@
+<style>
+
+.divmeter{
+	width:35%;	
+    border-radius: 2px;
+    background-color:#CCC;
+	display:inline-block;
+	padding:6px;
+	background-color:transparent #CCC;
+	}
+
+.divmenu {
+	vertical-align:middle;
+	color:#FFF;
+	width:48%;	
+    border-radius: 2px;
+    background-color:black;
+	display:inline-block;
+	height:23px;
+	padding: 6px;
+	font-size:13px;
+}
+
+
+html, body {height:100%; font-family: Calibri;}
+html {
+	background: url(images/bck2.jpg); 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;}
+
+h2, h3 {
+font-family: Georgia;
+color:maroon;
+}
+
+a.links {
+	color:#FFF;	
+	height:23px;
+	font-size:13px;
+	text-decoration:none;
+	}
+a.links:hover {
+	text-decoration:underline;
+	}
+	
+.phases{
+	color:#104900;
+	font-family:calibri;
+	font-size:18px;
+	}
+	
+.title {
+font-family:calibri;
+color:maroon;
+font-size:21px;
+}
+
+.select-style{
+	border-radius: 25px;
+	width:35%;
+	height:40px;
+	font-size:17px;
+	padding:5pt;
+	border:solid;
+	border-width:1px;
+	border-color:maroon;
+	background-color:white;
+	color:maroon;
+	}
+	
+.decisions {
+font-family:calibri;
+color:maroon;
+font-size:19px;
+}
